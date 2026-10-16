@@ -113,7 +113,7 @@ int symb_to_num(char *symbol) {
 
 // adding variables to the hash table. variables get addresses from 16 onwards
 void add_var(char *variable) {
-    int slot = djb2_hash(variable);
+    int slot = find_slot(variable);
     strcpy(hashTable[slot].name, variable);
     hashTable[slot].addr = ++addrCounter;
 }
