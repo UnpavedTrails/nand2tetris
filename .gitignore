@@ -1,0 +1,5 @@
+*.zip
+*.o
+
+/6_HackAssembler/trials/
+/6_HackAssembler/HackAssembler
